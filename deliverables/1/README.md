@@ -73,9 +73,40 @@ the defect reporting template:
 	 EXPECTED BEHAVIOR:
 	 OBSERVED BEHAVIOR:
 
-Other attributes of a defect (e.g., SEVERITY or IMPACT) are not necessary.
-Don't forget to include any preconditions at the beginning of the REPRODUCTION
-STEPS.
+Please apply all the things you learned through **Exercise 1** to this
+deliverable.  For example, don't forget to include any preconditions at the
+beginning of the REPRODUCTION STEPS.
+
+There are a few things that are different from Exercise 1 though:
+
+1. Execution Steps: Exercise 1 had just one execution step (launching the
+   program).  You will have multiple steps for most test cases in this
+deliverable.  All steps must numbered and clearly delineated.  It should not
+say "Go north".  Instead it should say "Type N and press [Enter]".
+
+2. Preconditions: Unlike Exercise 1, now preconditions can include program
+   state as well as other system state.  For example, you might want express a
+precondition that the player has sugar in possession.  Now you have two
+options: 1) Just straight up say "The player has sugar" or 2) List the input
+steps that led to the program state where the player has sugar.  Which do you
+prefer?
+
+   The former has brevity on its side, but if you really want your test case to
+be reproducible you should really do the latter.  Because depending on the
+steps you took the acquire the sugar, the program could be internally in a
+different state.  For example, suppose the program has an internal counter that
+counts the number of rooms visited by the player.  Depending on the route you
+took to get to the sugar, that counter value would be different and that value
+may impact the final outcome of your program!
+
+   So in summary, always describe preconditions as a series of performed
+actions rather than the external visible program state.  This also applies to
+defect reporting.  Then you may ask, wouldn't that make the preconditions
+harder to read?  It's much easier to understand "the player has sugar" rather
+than trying to decypher the series of steps that leads to that precondition.
+Well, you can describe the preconditions you are trying to achieve at the
+beginning of the PRECONDITIONS item and then list the steps that get you there.
+Phew!
 
 ## Coffee Maker Quest
 
@@ -90,11 +121,11 @@ You can run it downloading the coffeemaker.jar file and running:
 java -jar coffeemaker.jar
 ```
 
-The requirements are listed in the file requirements.txt.
+The requirements are listed in the file [requirements.txt](requirements.txt).
 
 ## Tips
 
-Please read [deliverable1-tips.md] if you are confused.
+Please read [deliverable1-tips.md](deliverable1-tips.md) if you are confused.
 
 ## Grading
 * Introduction: 10% of grade
@@ -102,15 +133,15 @@ Please read [deliverable1-tips.md] if you are confused.
 * Traceability Matrix: 20% of grade
 * Defects Found and Described: 30% of grade
 
-Please review the grading_rubric.txt for details.
+Please review the [grading_rubric.txt](grading_rubric.txt) for details.
 
 ## Submission
 
-Please use the ReportTemplate.docx file provided in this directory to write
-your report.  If you don't have a .docx compatible word processor, that's
-perfectly fine as long as you follow the same organization.  A PDF version of
-the file is at ReportTemplate.pdf.  Please make sure that the intro,
-traceability matrix, test cases, and defects are on seperate pages.  You will
+Please use the [ReportTemplate.docx](ReportTemplate.docx) file provided in this
+directory to write your report.  If you don't have a .docx compatible word processor,
+that's perfectly fine as long as you follow the same organization.  A PDF version of
+the file is at [ReportTemplate.pdf](ReportTemplate.pdf).  Please make sure that
+the intro, traceability matrix, test cases, and defects are on seperate pages.  You will
 be submitting to GradeScope in PDF format.  When you submit, you will be asked
 to assign pages in the PDF file to each rubric item: 1. Introduction, 2.
 Traceability Matrix, 3. Test Cases, and 4. Defects.
@@ -120,7 +151,3 @@ member* of the group.  The submitting member will press the "View or edit
 group" link at the top-right corner of the assignment page before or after
 submission to add his/her partner.  Make sure that your partner is there, or
 he/she will not get a grade.
-
-Please feel free to email me at wahn@pitt.edu or come to office hours to
-discuss any problems you have. 
- 

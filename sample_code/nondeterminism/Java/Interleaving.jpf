@@ -1,0 +1,20 @@
+classpath = .
+
+# Target class main method to run.  In this case, we are invoking the main method of DrunkCarnivalShooterImpl with the argument "test".
+target = Interleaving
+
+# If set to true, enumerates all possible values returned by Random.nextInt.
+# If set to false, the original Random.nextInt is called to generate an actual random number.
+# Temporarily set to false if you are overwhelmed with error messages from all the possible paths.
+cg.enumerate_random = true
+
+# On property violation, print the error and the choice trace
+report.console.property_violation=error
+
+# If true, prints program output as JPF traverses all possible paths
+vm.tree_output = true
+vm.enable_assertions = *
+
+listener=.listener.PreciseRaceDetector
+
+search.class = .search.heuristic.DFSHeuristic
