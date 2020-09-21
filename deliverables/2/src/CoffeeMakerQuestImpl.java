@@ -51,10 +51,12 @@ public class CoffeeMakerQuestImpl implements CoffeeMakerQuest {
 	 * the same adjective or furnishing), the room is not added. If all these tests
 	 * pass, the room is added. Also, the north door of the northern-most room is
 	 * labeled northDoor and the south door of the added room is labeled southDoor.
+	 * Of course, the north door of the new room is still null because there is
+	 * no room to the north of the new room.
 	 * 
 	 * @param room      the room to add
-	 * @param northDoor string to label the north door of the northern-most room
-	 * @param northDoor string to label the south door of room
+	 * @param northDoor string to label the north door of the current northern-most room
+	 * @param southDoor string to label the south door of the newly added room
 	 * @return true if successful, false otherwise
 	 */
 	public boolean addRoomAtNorth(Room room, String northDoor, String southDoor) {

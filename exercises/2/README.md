@@ -189,8 +189,7 @@ Beside the feedback given by the autograder, the TA or myself will leave more de
 These links are the same ones posted at the end of the slides:
 
 * JUnit User manual:  
-https://junit.org/junit5/docs/current/user-guide/  
-The Writing Tests section is probably the most useful.
+https://junit.org/junit4/
 
 * JUnit Reference Javadoc:  
 http://junit.sourceforge.net/javadoc/  
