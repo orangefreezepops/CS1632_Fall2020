@@ -1,8 +1,8 @@
 # CS 1632 - Software Quality Assurance
 Fall Semester 2020 - Supplementary Exercise 1
 
-* DUE: Sep 23, 2020 09:00 AM (Mon/Wed class)
-* DUE: Sep 24, 2020 09:00 AM (Tue/Thu class)
+* DUE: Sep 28, 2020 09:00 AM (Mon/Wed class)
+* DUE: Sep 29, 2020 09:00 AM (Tue/Thu class)
 
 ## Description
 
@@ -29,9 +29,9 @@ following link (not recommended): https://maven.apache.org/download.cgi
 
 ## Running Cucumber Tests
 
-To use the Eclipse Cucumber plog-in, first open the Eclipse project I have made for you:
+To use the Eclipse Cucumber plug-in, first open the Eclipse project I have made for you:
 1. Click on File > Open Projects from File System.
-2. Click on Directory and browse to the folder with CS1632_Fal2020/exercises/Supplement1.
+2. Click on Directory and browse to the folder with CS1632_Fall2020/exercises/Supplement1.
 3. The "Supplement1" folder imported as "Eclipse project" checkbox should be auto-selected.
 4. Click on the Finish button.
 

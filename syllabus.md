@@ -72,10 +72,11 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 2: Study for Midterm 1 (NO CLASS)
 
-* Midterm 1: TBD on GradeScope
-  * Take home exam submitted online
+* Midterm 1 on GradeScope: Friday (Oct. 2) 10:00 AM - Sunday (Oct. 4) 10:00 AM
+  * Will be posted as link named "Midterm 1" at Friday 10:00 AM
+  * You will choose a 3 hour span to complete exam within the above 2-day period
+  * Your 3 hours begin the moment you click on link and agree to the terms on the next screen
   * Open book but individual work
-  * Will not take any questions whatsoever about lecture material during this period
 
 * Listen to lectures (TopHat questions due the following before Class 1 at 9:00 AM):
   * Automated System Testing
