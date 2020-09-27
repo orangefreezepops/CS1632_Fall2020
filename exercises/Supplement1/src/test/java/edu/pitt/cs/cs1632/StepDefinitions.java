@@ -9,6 +9,9 @@ import static org.junit.Assert.*;
 public class StepDefinitions {
 	private RentACat r;
 	private String listResult;
+	private int cat_id;
+	private boolean rented;
+	private boolean returned;
 	
 	// TODO: Add more member variables and methods as necessary
 
@@ -36,7 +39,13 @@ public class StepDefinitions {
 	@When("I rent cat number {int}")
 	public void iRentCatNumber(Integer id) {
 		// TODO: Implement
-		fail();
+		rented = r.rentCat(id);
+	}
+	
+	@When("I return cat number {int}")
+	public void iReturnCatNumber(Integer id) {
+		// TODO: Implement
+		returned = r.returnCat(id);
 	}
 	
 	@Then("the listing is: {string}")
@@ -47,12 +56,24 @@ public class StepDefinitions {
 	@Then("the rent is successful")
 	public void theRentIsSuccessful() {
 		// TODO: Implement
-		fail();
+		assertTrue(rented);
 	}
 
 	@Then("the rent is unsuccessful")
 	public void theRentIsUnsuccessful() {
 		// TODO: Implement
-		fail();
+		assertFalse(rented);
+	}
+	
+	@Then("the return is successful")
+	public void theReturnIsSuccessful() {
+		// TODO: Implement
+		assertTrue(returned);
+	}
+
+	@Then("the return is unsuccessful")
+	public void theReturnIsUnsuccessful() {
+		// TODO: Implement
+		assertFalse(returned);
 	}
 }
