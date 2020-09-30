@@ -118,7 +118,7 @@ public class CoffeeMakerQuestTest {
 	
 	/**
 	 * Test case for String processCommand("I").
-	 * Preconditions: None.
+	 * Preconditions: Player does not have any items.
 	 * Execution steps: Call cmq.processCommand("I").
 	 * Postconditions: Return value is "YOU HAVE NO COFFEE!\nYOU HAVE NO CREAM!\nYOU HAVE NO SUGAR!\n".
 	 */
