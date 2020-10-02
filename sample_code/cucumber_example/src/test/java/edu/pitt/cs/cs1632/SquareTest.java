@@ -17,7 +17,7 @@ public class SquareTest {
 		Square square = new Square();
 		Number number = Mockito.mock(Number.class);
 		square.setSquared(number, 3);
-		Mockito.verify(number).setVal(9);
+		Mockito.verify(number).setVal(9);       
 	}
 
 }
