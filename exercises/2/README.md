@@ -164,7 +164,7 @@ You will do two submissions for this exercise.
 
 1. Create a screenshot of code coverage stats given by your IDE of choice and name it code_coverage.png. Example:
 
-    https://github.com/wonsunahn/CS1632_Summer2020/blob/master/exercises/2/code_coverage.png
+    <img alt="Code Coverage" src=code_coverage.png width=700>
 
     I used Eclipse to generate the screenshot.  Here is the user guide: https://www.eclemma.org/userdoc/launching.html.  It is just a click of a button and requires no extra installation.  You don't have to have 100% coverage for this exercise but you will have coverage requirements for your deliverable.  I have already created an Eclipse project for you in the exercise directory so you can just open that to run TestRunner using File > Open Projects from File System from the menu.  If you can't open the project for some reason, you need to create a new project using File > New > Java Project.  For those of you who are new to eclipse, you need to include the four JAR files under CommandLineJUnit/ as external JARs for it to compile.  You need to go to project properties > Java Build Path > Libraries and Add JARs or Add External JARs.  Also, don't create module-info.java when prompted.
     

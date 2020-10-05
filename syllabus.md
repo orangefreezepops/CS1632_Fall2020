@@ -89,6 +89,8 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Deliverable 2 due Oct. 5 at 9:00 AM
 
+* Deliverable 3 released due Oct. 19 at 9:00 AM
+
 * Listen to lectures (TopHat questions due the following before Class 1 at 9:00 AM):
   * Performance Testing (READING: AFIST, Chapter 19)
   * Stochastic and Property-Based Testing (READING: AFIST, Chapter 18)
@@ -97,7 +99,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 1: In-class Supplementary Exercise 2: Property-based Testing (Due before Class 2 at 9:00 AM)
 
-* Class 2: Discuss Supplementary Exercise 2 / TopHat questions
+* Class 2: Student Self-care Day (NO CLASSES) 
 
 * Listen to lectures (TopHat questions due the following before Class 1 at 9:00 AM):
   * Static Analysis Part 1
@@ -107,7 +109,9 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 1: In-class Exercise 4: Performance Testing (Due before Class 2 at 9:00 AM)
 
-* Class 2: Student Self-care Day (NO CLASSES) 
+* Class 2: Discuss Exercise 4 / TopHat questions
+
+* Deliverable 3 due Oct. 19 at 9:00 AM
 
 * Listen to lectures (TopHat questions due the following before Class 1 at 9:00 AM):
   * Static Analysis Part 3
@@ -131,15 +135,13 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 13 (Week of 9 NOV)
 
-* Class 1: Guest Lecture 1 (TBD)
+* Nov. 10 (Tuesday): SAP Guest Lecture on UI Testing
 
-* Class 2: Guest Lecture 2 (TBD)
+* Nov. 12 (Thursday): SAP Guest Lecture on Performance Testing
 
 ## WEEK 14 (Week of 16 NOV)
 
-* Class 1: Midterm 2 review
-
-* Class 2: Study for Midterm 2 (NO CLASS)
+* Nov. 18 (Wednesday): Naval Nuclear Laboratory Guest Lecture on Testing in a DoD Lab
 
 * Midterm 2: TBD on GradeScope
   * Take home exam submitted online

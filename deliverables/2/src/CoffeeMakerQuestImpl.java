@@ -1,12 +1,5 @@
 import java.util.*;
 
-enum Item {
-	NONE,
-	COFFEE,
-	CREAM,
-	SUGAR
-}
-
 public class CoffeeMakerQuestImpl implements CoffeeMakerQuest {
 
 	CoffeeMakerQuestImpl() {
