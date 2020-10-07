@@ -120,7 +120,9 @@ You can now run the RedditCatsTest JUnit class using the provided
 Make sure all tests pass by looking at the TestRunner result.  If there are any
 failures, slightly touch up the D3Test.java Selenium tests to make them pass.
 Although Selenium IDE usually does a good job in the translation, sometimes it
-needs an extra hand.
+needs an extra hand.  Refer to the Exercise 3 troubleshooting guide:
+
+https://github.com/wonsunahn/CS1632_Fall2020/blob/master/exercises/3/README.md#tips-for-junit--selenium-problem-solving
 
 ## Submission
 
@@ -178,7 +180,7 @@ The GradeScope autograder works in 2 phases:
    on the D3 website as originally intended.  All of your tests should pass.
 
 1. **D3Test on https://cs1632-buggier.appspot.com/**: This tests your
-   D3Test.java on a buggier version of the D3 website.  Now all tests should fail.
+   D3Test.java on an even buggier version of the D3 website.  To do this, all your URLs are changed to the buggier website.  Now all tests should fail.
 
 If you get deductions, both websites are available to you, so try them out
 yourself.
