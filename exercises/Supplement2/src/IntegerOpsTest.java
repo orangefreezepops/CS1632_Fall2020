@@ -17,8 +17,10 @@ public class IntegerOpsTest {
 	 */
 	@Property(trials = 1000)
 	public void testAdd(int x, int y) {
-		// System.out.println("testAdd x='" + x + "', y='" + y + "'");
-		// TODO: Fill in.
+		System.out.println("testAdd x='" + x + "', y='" + y + "'");
+		if(x >= 0 && y >= 0) {
+			assertTrue(IntegerOps.add(x, y) >= 0);
+		}
 	}
 	
 	/**
@@ -30,8 +32,10 @@ public class IntegerOpsTest {
 	 */
 	@Property(trials = 1000)
 	public void testSubtract(int x, int y) {
-		// System.out.println("testSubtract x='" + x + "', y='" + y + "'");
-		// TODO: Fill in.
+		System.out.println("testSubtract x='" + x + "', y='" + y + "'");
+		if(x >= y) {
+			assertTrue(IntegerOps.subtract(x, y) >= 0);
+		}
 	}
 
 }

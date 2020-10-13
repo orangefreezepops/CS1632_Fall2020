@@ -8,8 +8,8 @@ public class IntegerOps {
 	 * @return Sum of x and y, or 0 if integer overflow
 	 */
 	public static int add(int x, int y) {
-		// TODO: Fix bug!
-		return x + y;
+		int ret = x + y;
+		return (ret >= 0) ? ret : 0;
 	}
 
 	/**
@@ -21,7 +21,7 @@ public class IntegerOps {
 	 * @return Difference between x and y, or 0 if integer overflow
 	 */
 	public static int subtract(int x, int y) {
-		// TODO: Fix bug!
-		return x - y;
+		int ret = x - y;
+		return (ret >= 0) ? ret : 0;
 	}
 }

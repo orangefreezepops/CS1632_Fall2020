@@ -102,7 +102,21 @@ public class ValidHTMLStringGenerator extends Generator<String> {
 	@Override
 	public List<String> doShrink(SourceOfRandomness random, String larger) {
 		// TODO: Fill in looking at the Javadoc comments above and ABCStringGenerator
-		return Collections.emptyList();
+		List<String> theList = new ArrayList<String>();
+		if(larger.length() < 7) {
+			return Collections.emptyList();
+		}
+		for(int i = 0; i < larger.length() - 6; i++) {
+			if(larger.substring(i, i + 7).equals("<b></b>")) {
+				String smaller = larger.substring(0, i) + larger.substring(i + 7);
+				theList.add(smaller);
+			}
+			if(larger.substring(i, i + 7).equals("<i></i>")) {
+				String smaller = larger.substring(0, i) + larger.substring(i + 7);
+				theList.add(smaller);
+			}
+		}
+		return theList;
 		
 	}
 }

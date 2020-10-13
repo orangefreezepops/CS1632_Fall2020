@@ -11,11 +11,17 @@ public class StringOps {
 	 * @return Whether s1 and s2 are identical
 	 */
 	public static boolean equals(String s1, String s2) {
-		// TODO: Fix bug!
+		// TODO: Fix bug! --
+		//avoiding the corner case described in the assignment readMe
 		for (int i = 0; i < Integer.min(s1.length(), s2.length()); i++) {
-			if (s1.charAt(i) != s2.charAt(i)) {
+			//if either of the characters at this index are null 
+			//(i.e the strings are of different lengths)
+			if (s1.length() != s2.length()) {
+				return false;
+			} else if (s1.charAt(i) != s2.charAt(i)) {
 				return false;
 			}
+			
 		}
 		return true;
 	}
@@ -34,12 +40,13 @@ public class StringOps {
 		Stack<String> stack = new Stack<String>();
 		for (int i = 0; i < s.length(); i++) {
 			if (s.startsWith("<b>", i) || s.startsWith("<i>", i)) {
-				stack.push(s.substring(i, i + 2));
+				stack.push(s.substring(i, i + 3));
 			} else if (s.startsWith("</b>", i) || s.startsWith("</i>", i)) {
 				if (stack.empty()) {
 					return false;
 				}
 				if (s.startsWith("</b>", i)) {
+					assert s.startsWith("</b>", i);
 					String top = stack.pop();
 					if (!top.equals("<b>")) {
 						return false;

@@ -16,9 +16,11 @@ public class StringOpsTest {
 	 * @param s2 Second string
 	 */
 	@Property(trials = 1000)
-	public void testEquals(String s1, String s2) {
-		// System.out.println("testEquals s1='" + s1 + "', s2='" + s2 + "'");
-		// TODO: Fill in.
+	public void testEquals(@From(ABCStringGenerator.class)String s1, @From(ABCStringGenerator.class)String s2) {
+		//System.out.println("testEquals s1='" + s1 + "', s2='" + s2 + "'");
+		if(s1.length() != s2.length()) {
+			assertFalse(StringOps.equals(s1, s2));
+		}
 	}
 
 	/**
