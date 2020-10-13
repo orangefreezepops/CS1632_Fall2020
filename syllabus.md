@@ -97,7 +97,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 9 (Week of 12 OCT)
 
-* Class 1: In-class Supplementary Exercise 2: Property-based Testing (Due before Class 2 at 9:00 AM)
+* Class 1: In-class Supplementary Exercise 2: Property-based Testing (Due before Week 10 Class 1 at 9:00 AM)
 
 * Class 2: Student Self-care Day (NO CLASSES) 
 
