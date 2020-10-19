@@ -56,7 +56,15 @@ TestRunner.java - Driver class that contains the main method to invoke JUnit on 
     bash runTest.sh
     ```    
 
-Initially, you should see the usual "ALL TESTS PASSED" message.
+Initially, you should see one test already failing:
+```
+testIsValidHTMLTrue(StringOpsTest): Property named 'testIsValidHTMLTrue' failed:
+With arguments: [<i><b><i></i></b><b></b><b><i></i></b><i><b><i></i></b></i><i></i></i>]
+Seeds for reproduction: [4133865354563074415]
+
+!!! - At least one failure, see above.
+```
+You may see a different seed and string because it is randomly generated.
 
 Alternatively, I've created an Eclipse project for you so you can use Eclipse
 to import the existing project and run either IntegerOpsTest or StringOpsTest
@@ -271,11 +279,7 @@ Fix equals() based on the feedback given by QuickCheck.
 
 Now it's time to look at the testIsValidHTML method:
 
-Again, fill in according to the Javadoc comment.  But even after filling in the
-test, the test never fails due to the uniform distribution.  The method only
-checks the invariant assertion when "StringOps.isValidHTML(s) returns true"
-according to the comment.  And it is very difficult to randomly hit on a string
-that is valid HTML given the uniform distribution.  So we need a different
+A uniform distribution will not give us valid HTML strings.  So we need a different
 generator just like before, namely the HTMLStringGenerator.
 
 ```

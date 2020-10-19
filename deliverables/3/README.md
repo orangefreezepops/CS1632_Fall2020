@@ -117,7 +117,7 @@ You can now run the RedditCatsTest JUnit class using the provided
    run.sh
    ```
 
-Make sure all tests pass by looking at the TestRunner result.  If there are any
+Make sure all tests pass by looking at the TestRunner result (the tests that should pass, not the ones that uncover defects of course :).  If there are any
 failures, slightly touch up the D3Test.java Selenium tests to make them pass.
 Although Selenium IDE usually does a good job in the translation, sometimes it
 needs an extra hand.  Refer to the Exercise 3 troubleshooting guide:

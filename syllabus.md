@@ -113,6 +113,8 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Deliverable 3 due Oct. 19 at 9:00 AM
 
+* Deliverable 4 released due Nov. 2 at 9:00 AM
+
 * Listen to lectures (TopHat questions due the following before Class 1 at 9:00 AM):
   * Static Analysis Part 3
   * Pairwise and Combinatorial Testing (READING: AFIST, Chapter 17)
@@ -132,6 +134,8 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 * Class 1: In-class Supplementary Exercise 3: Security Testing (Due before Class 2 at 9:00 AM)
 
 * Class 2: Discuss Supplementary Exercise 3 / TopHat questions
+
+* Deliverable 4 due Nov. 2 at 9:00 AM
 
 ## WEEK 13 (Week of 9 NOV)
 
