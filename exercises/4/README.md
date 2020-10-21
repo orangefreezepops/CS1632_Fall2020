@@ -264,7 +264,7 @@ run the autograder to grade you and give feedback.  If you get deductions, fix
 your code based on the feedback and resubmit.  Repeat until you don't get
 deductions. Don't forget to add your partner to the submission.
 
-1. Create a screenshot of the VisualVM Hotspots panel after running MonkeySim with argument 27 and name it hotspots.png. Example:
+1. Create a screenshot of the VisualVM Hotspots panel after running MonkeySim with argument 27 and name it hotspots.png. This should be after you have done all your optimizations and refactoring.  Example:
 
    ![alt text](hotspots.png "Hotspots panel after optimizations")
 

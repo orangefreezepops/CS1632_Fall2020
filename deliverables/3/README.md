@@ -98,7 +98,7 @@ comments.  Leave other boxes unchecked.
 
 1. Save the resulting file into "D3Test.java".
 
-You can now run the RedditCatsTest JUnit class using the provided
+You can now run the D3Test JUnit class using the provided
 [TestRunner.java](TestRunner.java) using one of the following scripts:
 
 * If you are running Windows:
