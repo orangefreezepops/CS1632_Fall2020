@@ -121,9 +121,9 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 11 (Week of 26 OCT)
 
-* Class 1: In-class Exercise 5: Static Analysis (Due before Class 2 at 9:00 AM)
+* Class 1: In-class Exercise 5: Static Analysis Part 1 (Due before Class 2 at 9:00 AM)
 
-* Class 2: Discuss Exercise 5 / Deliverable 5 / TopHat questions
+* Class 2: In-class Exercise 5: Static Analysis Part 2 (Due before Week 12 Class 2 at 9:00 AM)
 
 * Listen to lectures (TopHat questions due the following before Class 1 at 9:00 AM):
   * Smoke and Exploratory Testing (READING: AFIST, Chapters 10-11)
@@ -131,9 +131,9 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
   
 ## WEEK 12 (Week of 2 NOV)
 
-* Class 1: In-class Supplementary Exercise 3: Security Testing (Due before Class 2 at 9:00 AM)
+* Class 1: Discuss Deliverable 5 / Finish Exercise 5 Part 2
 
-* Class 2: Discuss Supplementary Exercise 3 / TopHat questions
+* Class 2: Discuss Exercise 5 / TopHat questions
 
 * Deliverable 4 due Nov. 2 at 9:00 AM
 

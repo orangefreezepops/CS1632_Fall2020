@@ -154,10 +154,8 @@ This is what I got after optimizing:
 
 I gave argument 27 for the run.  Note that now the run takes approximately 3
 seconds to run, which is a marked improvement over 37 minutes for the original
-code!  Now the most time consuming method is generateId by a wide margin.  But
-there is no way to refactor that method without changing the output.
-Refactoring any other method would have negligible impact on performance.  So
-this is when you pat yourself on the back and declare victory.
+code!  Now the most time consuming method is generateId by a wide margin.  I could refactor generateId() further but I am satisfied at this point.
+So this is when you pat yourself on the back and declare victory.
 
 ## Pinning Tests
 
