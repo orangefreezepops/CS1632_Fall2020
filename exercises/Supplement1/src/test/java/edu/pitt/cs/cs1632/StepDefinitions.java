@@ -39,6 +39,7 @@ public class StepDefinitions {
 	@When("I rent cat number {int}")
 	public void iRentCatNumber(Integer id) {
 		// TODO: Implement
+		cat_id = id;
 		rented = r.rentCat(id);
 	}
 	
