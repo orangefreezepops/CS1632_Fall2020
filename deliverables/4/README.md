@@ -7,7 +7,8 @@ DUE: Nov 2 (Monday), 2020 09:00 AM
 
 For this assignment, your group will profile a Conway's Game of Life
 simulation, and improve its performance by refactoring several methods (to be
-determined by the results of the profiling).  This will consist of several
+determined by the results of the profiling).  The program is assumed to be functionally correct.
+It's only problem is that certain features are too slow.  This will consist of several
 parts:
 
 1. Profiling (before) to determine which method is the most CPU-intensive
@@ -92,10 +93,10 @@ profiler, determine the THREE methods you can modify to measurably increase the
 speed of the application without modifying behavior.  Refer to Exercise 4 for a
 detailed explanation of how to use VisualVM to profile an application.
 
-Now there is one more step that you have to do on VisualVM not explained in
+Now there is one more step that you have to do on VisualVM you did not have to do in
 Exercise 4: you need to replace "GameOfLife" with "*" in the "Profile classes:"
 window on the right before pressing on the "CPU" button to start profiling.
-This instructs VisualVM to not only the GameOfLife class (the class with the
+This instructs VisualVM to instrument not only the GameOfLife class (the class with the
 main method), but all classes in the application.  You did not need to do this
 for the Exercise 4 MonkeySim application because it was single-threaded
 application.  All code in a single-threaded application execute starting from

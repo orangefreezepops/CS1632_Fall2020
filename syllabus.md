@@ -125,6 +125,8 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 2: In-class Exercise 5: Static Analysis Part 2 (Due before Week 12 Class 2 at 9:00 AM)
 
+* Deliverable 5 released due Dec 3, 2020 at 11:59 PM
+
 * Listen to lectures (TopHat questions due the following before Class 1 at 9:00 AM):
   * Smoke and Exploratory Testing (READING: AFIST, Chapters 10-11)
   * Security Testing (READING: AFIST, Chapter 20)
@@ -139,15 +141,38 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 13 (Week of 9 NOV)
 
-* Nov. 10 (Tuesday): SAP Guest Lecture on UI Testing
+* Nov. 9 (Monday) 9:25-10:40 : NO CLASS
 
-* Nov. 12 (Thursday): SAP Guest Lecture on Performance Testing
+* Nov. 10 (Tuesday) 9:25-10:40 : SAP Guest Lecture on UI Testing
+  * Everybody on either section are welcome to join!
+  * TopHat attendance will be taken for Tue/Thu students.
+  * Join URL: https://pitt.zoom.us/j/9290037173
+
+* Nov. 11 (Wednesday) 9:25-10:40 : Forcepoint Guest Lecture
+  * Everybody on either section are welcome to join!
+  * TopHat attendance will be taken for Mon/Wed students.
+  * Join URL: https://pitt.zoom.us/j/93739809696
+
+* Nov. 12 (Thursday) 9:25-10:40 : SAP Guest Lecture on Performance Testing
+  * Everybody on either section are welcome to join!
+  * TopHat attendance will be taken for Tue/Thu students.
+  * Join URL: https://pitt.zoom.us/j/9290037173
 
 ## WEEK 14 (Week of 16 NOV)
 
-* Nov. 18 (Wednesday): Naval Nuclear Laboratory Guest Lecture on Testing in a DoD Lab
+* Nov. 16 (Monday) 9:25-10:40 : Midterm 2 review
 
-* Midterm 2: TBD on GradeScope
-  * Take home exam submitted online
+* Nov. 17 (Tuesday) 9:25-10:40 : Midterm 2 review
+
+* Nov. 18 (Wednesday) 9:25-10:40 : Naval Nuclear Laboratory Guest Lecture on Testing in a DoD Lab
+  * Everybody on either section are welcome to join!
+  * TopHat attendance will be taken for Mon/Wed students.
+  * Join URL: https://pitt.zoom.us/j/93739809696
+
+* Nov. 19 (Thursday) 9:25-10:40 : NO CLASS
+
+* Midterm 2 on GradeScope: Friday (Nov. 20) 10:00 AM - Sunday (Nov. 22) 10:00 AM
+  * Will be posted as link named "Midterm 2" at Friday 10:00 AM
+  * You will choose a 3 hour span to complete exam within the above 2-day period
+  * Your 3 hours begin the moment you click on link and agree to the terms on the next screen
   * Open book but individual work
-  * Will not take any questions whatsoever about lecture material during this period

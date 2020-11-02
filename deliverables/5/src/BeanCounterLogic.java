@@ -15,9 +15,8 @@ public interface BeanCounterLogic {
 		case SOLUTION:
 			return new BeanCounterLogicSolution(slotCount);
 		default:
-			assert (false);
-			return null;
 		}
+		return null;
 	}
 	
 	// Public interface of BeanCounterLogic

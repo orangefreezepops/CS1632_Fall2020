@@ -33,13 +33,16 @@ addition, there is a [Text UI mode](#text-ui-mode) that you can use to test
 and debug most of your program.
 
 All the projects so far have used some form of dynamic testing.  In this
-project, we will focus on static testing.  You are still well-advised to use
-all the techniques we have learned so far: test-driven development (TDD),
-automated unit testing, code coverage, and manual testing to name a few.  But
-you will not be required to submit a proof of testing.  What you will be graded
+project, we will focus grading on static testing.  You will be graded
 upon is static testing techniques such as: linting, pattern-based bug finding,
-and model checking.  Also, as always, you will be graded upon the quality of
-the software itself.
+and model checking.  
+
+But you are still expected to use
+all the techniques we have learned so far: test-driven development (TDD),
+automated unit testing, code coverage, and manual testing to name a few to come
+up with good quality software.  The GradeScope autograder will do extensive testing
+to test various features of the software.  If any of the tests fail, that means
+you have not thoroughly tested your software.
 
 * IMPORTANT: You need Java 8 (1.8.0.231, preferably) to run the Java Path
   Finder model checker.  Make sure you have the correct Java version by doing
@@ -223,14 +226,14 @@ Here is a list of files and their contents:
 * BeanCounterLogicImpl.java - The core logic of the bean machine.  Maintains a
   list of beans that fall one step in the machine whenever advanceStep() is
 called.  Maps beans into a logical coordinate system.  Also contains a main
-method which implements the Text UI of the program. (modify)
+method which implements the Text UI of the program. (**modify**)
 
 * BeanImpl.java - The Bean implementation.  Maintains the x-coordinate of the
   bean, as well as how many right moves are remaining if in skill mode.
 Governs the movement of that particular bean when choose() is called, depending
 on whether the bean is a skilled bean or a lucky bean.  The Random number
 generator that gives randomness to the movement is injected in the BeanImpl
-constructor for easier testing. (modify)
+constructor for easier testing. (**modify**)
 
 * BeanCounterLogicTest.java - The JUnit test class for the BeanCounterLogicImpl
   class.  Depending on Config, it either runs in plain JUnit mode or JPF on
@@ -240,7 +243,7 @@ mode).  Also the Random number generator is seeded with 42 to make tests
 reproducible.  In JPF on JUnit mode, you are asked to exhaustively test
 different machine configurations (see [Model Checking Using
 JUnit](#model-checking-using-junit)) and all random numbers will be
-exhaustively tested too. (modify)
+exhaustively tested too. (**modify**)
 
 * Config.java - The high level configuration of the program.  Controls
   LogicType (your impl, buggy, or solution) and TestType (plain JUnit or JPF on
@@ -709,7 +712,7 @@ distribution is synonymous with Gaussian distribution, hence the name.  Here is
 the formula you should use:
 
 ```
-SKILL_AVERAGE = (double) SLOT_COUNT * 0.5
+SKILL_AVERAGE = (double) (SLOT_COUNT-1) * 0.5
 SKILL_STDEV = (double) Math.sqrt(SLOT_COUNT * 0.5 * (1 - 0.5))
 SKILL_LEVEL = (int) Math.round(rand.nextGaussian() * SKILL_STDEV + SKILL_AVERAGE)
 ```

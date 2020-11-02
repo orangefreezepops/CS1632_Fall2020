@@ -3,18 +3,15 @@ import java.util.Random;
 /**
  * Code by @author Wonsun Ahn
  * 
- * <p>
- * Bean: Each bean is assigned a skill level from 0-9 on creation according to a
+ * <p>Bean: Each bean is assigned a skill level from 0-9 on creation according to a
  * normal distribution with average SKILL_AVERAGE and standard deviation
  * SKILL_STDEV. The formula to calculate the skill level is:
  * 
- * <p>
- * SKILL_AVERAGE = (double) SLOT_COUNT * 0.5
+ * <p>SKILL_AVERAGE = (double) (SLOT_COUNT-1) * 0.5
  * SKILL_STDEV = (double) Math.sqrt(SLOT_COUNT * 0.5 * (1 - 0.5))
  * SKILL_LEVEL = (int) Math.round(rand.nextGaussian() * SKILL_STDEV + SKILL_AVERAGE)
  * 
- * <p>
- * A skill level of 9 means it always makes the "right" choices (pun intended)
+ * <p>A skill level of 9 means it always makes the "right" choices (pun intended)
  * when the machine is operating in skill mode ("skill" passed on command line).
  * That means the bean will always go right when a peg is encountered, resulting
  * it falling into slot 9. A skill evel of 0 means that the bean will always go
@@ -22,8 +19,7 @@ import java.util.Random;
  * bean will first go right then left. For example, for a skill level of 7, the
  * bean will go right 7 times then go left twice.
  * 
- * <p>
- * Skill levels are irrelevant when the machine operates in luck mode. In that
+ * <p>Skill levels are irrelevant when the machine operates in luck mode. In that
  * case, the bean will have a 50/50 chance of going right or left, regardless of
  * skill level. The formula to calculate the direction is: rand.nextInt(2). If
  * the return value is 0, the bean goes left. If the return value is 1, the bean
