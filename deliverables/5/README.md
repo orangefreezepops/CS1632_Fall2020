@@ -712,7 +712,7 @@ distribution is synonymous with Gaussian distribution, hence the name.  Here is
 the formula you should use:
 
 ```
-SKILL_AVERAGE = (double) (SLOT_COUNT-1) * 0.5
+SKILL_AVERAGE = (double) (SLOT_COUNT - 1) * 0.5
 SKILL_STDEV = (double) Math.sqrt(SLOT_COUNT * 0.5 * (1 - 0.5))
 SKILL_LEVEL = (int) Math.round(rand.nextGaussian() * SKILL_STDEV + SKILL_AVERAGE)
 ```

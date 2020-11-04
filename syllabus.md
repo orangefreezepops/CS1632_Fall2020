@@ -146,7 +146,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 * Nov. 10 (Tuesday) 9:25-10:40 : SAP Guest Lecture on UI Testing
   * Everybody on either section are welcome to join!
   * TopHat attendance will be taken for Tue/Thu students.
-  * Join URL: https://pitt.zoom.us/j/9290037173
+  * Join URL: https://pitt.zoom.us/j/92900371738
 
 * Nov. 11 (Wednesday) 9:25-10:40 : Forcepoint Guest Lecture
   * Everybody on either section are welcome to join!
@@ -156,7 +156,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 * Nov. 12 (Thursday) 9:25-10:40 : SAP Guest Lecture on Performance Testing
   * Everybody on either section are welcome to join!
   * TopHat attendance will be taken for Tue/Thu students.
-  * Join URL: https://pitt.zoom.us/j/9290037173
+  * Join URL: https://pitt.zoom.us/j/92900371738
 
 ## WEEK 14 (Week of 16 NOV)
 
