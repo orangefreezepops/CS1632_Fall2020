@@ -1,3 +1,4 @@
+
 import java.awt.*;
 import javax.swing.*;
 import java.util.*;
@@ -82,7 +83,8 @@ public class MainPanel extends JPanel {
 	}
 
 	public boolean iterateCell(int x, int y) {
-		String toReturn = "false";
+		//original
+		/*String toReturn = "false";
 		boolean alive = _cells[x][y].getAlive();
 		int numNeighbors = getNumNeighbors(x, y);
 		if (alive) {
@@ -109,6 +111,26 @@ public class MainPanel extends JPanel {
 		toReturn = padding + toReturn;
 	
 		return Boolean.parseBoolean(toReturn.substring(padding.length()));
+		*/
+		//refactor
+		String toReturn = "false";
+		boolean alive = _cells[x][y].getAlive();
+		int numNeighbors = getNumNeighbors(x, y);
+		if (alive) {
+			if (numNeighbors < 2 || numNeighbors > 3) {
+				toReturn = "false";
+			} else {
+				toReturn = "true";
+			}
+		} else {
+			if (numNeighbors == 3) {
+				toReturn = "true";
+			} else {
+				toReturn = "false";
+			}
+		}
+	
+		return Boolean.parseBoolean(toReturn);
 	}
 
 	public void displayIteration(boolean[][] nextIter) {
@@ -126,7 +148,8 @@ public class MainPanel extends JPanel {
 	 */
 
 	public void calculateNextIteration() {
-		boolean[][] nextIter = new boolean[_size][_size];
+		//original
+		/*boolean[][] nextIter = new boolean[_size][_size];
 		for (int j = 0; j < _size; j++) {
 			for (int k = 0; k < _size; k++) {
 				nextIter[j][k] = iterateCell(j, k);
@@ -137,6 +160,16 @@ public class MainPanel extends JPanel {
 			_r += _maxCount;
 		}
 		_r = 1000;
+
+		displayIteration(nextIter);
+		*/
+		//refactor
+		boolean[][] nextIter = new boolean[_size][_size];
+		for (int j = 0; j < _size; j++) {
+			for (int k = 0; k < _size; k++) {
+				nextIter[j][k] = iterateCell(j, k);
+			}
+		}
 
 		displayIteration(nextIter);
 	}
@@ -358,3 +391,4 @@ public class MainPanel extends JPanel {
 	}
 
 }
+
