@@ -73,10 +73,11 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 * Class 2: Study for Midterm 1 (NO CLASS)
 
 * Midterm 1 on GradeScope: Friday (Oct. 2) 10:00 AM - Sunday (Oct. 4) 10:00 AM
-  * Will be posted as link named "Midterm 1" at Friday 10:00 AM
-  * You will choose a 3 hour span to complete exam within the above 2-day period
-  * Your 3 hours begin the moment you click on link and agree to the terms on the next screen
-  * Open book but individual work
+  * Check out the **[study guide](/study_guides/midterm_1_study_guide.md)**!
+  * Will be posted as link named "Midterm 1" at Friday 10:00 AM.
+  * You will choose a 3 hour span to complete exam within the above 2-day period.
+  * Your 3 hours begin the moment you click on link and agree to the terms on the next screen.
+  * Open book but individual work.
 
 * Listen to lectures (TopHat questions due the following before Class 1 at 9:00 AM):
   * Automated System Testing
@@ -148,7 +149,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
   * TopHat attendance will be taken for Tue/Thu students.
   * Join URL: https://pitt.zoom.us/j/92900371738
 
-* Nov. 11 (Wednesday) 9:25-10:40 : Forcepoint Guest Lecture
+* Nov. 11 (Wednesday) 9:25-10:40 : Forcepoint Guest Lecture on Security Testing
   * Everybody on either section are welcome to join!
   * TopHat attendance will be taken for Mon/Wed students.
   * Join URL: https://pitt.zoom.us/j/93739809696
@@ -172,7 +173,8 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 * Nov. 19 (Thursday) 9:25-10:40 : NO CLASS
 
 * Midterm 2 on GradeScope: Friday (Nov. 20) 10:00 AM - Sunday (Nov. 22) 10:00 AM
-  * Will be posted as link named "Midterm 2" at Friday 10:00 AM
-  * You will choose a 3 hour span to complete exam within the above 2-day period
-  * Your 3 hours begin the moment you click on link and agree to the terms on the next screen
-  * Open book but individual work
+  * Check out the **[study guide](/study_guides/midterm_2_study_guide.md)**!
+  * Will be posted as link named "Midterm 2" at Friday 10:00 AM.
+  * You will choose a 3 hour span to complete exam within the above 2-day period.
+  * Your 3 hours begin the moment you click on link and agree to the terms on the next screen.
+  * Open book but individual work.
