@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.Random;
 
@@ -27,7 +28,10 @@ import java.util.Random;
  */
 
 public class BeanCounterLogicImpl implements BeanCounterLogic {
-	// TODO: Add member methods and variables as needed
+	private int slotCount;
+	private Bean[] beansOnBoard;
+	private ArrayList<Bean> remainingBeans;
+	private ArrayList<Bean>[] slots;
 
 	/**
 	 * Constructor - creates the bean counter logic object that implements the core
@@ -36,7 +40,13 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * @param slotCount the number of slots in the machine
 	 */
 	BeanCounterLogicImpl(int slotCount) {
-		// TODO: Implement
+		this.slotCount = slotCount;
+		beansOnBoard = new Bean[slotCount];
+		remainingBeans = new ArrayList<Bean>();
+		slots = new ArrayList[slotCount];
+		for (int i = 0; i < slotCount; i++) {
+			slots[i] = new ArrayList<Bean>();
+		}
 	}
 
 	/**
@@ -45,8 +55,7 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * @return number of slots
 	 */
 	public int getSlotCount() {
-		// TODO: Implement
-		return 1;
+		return slotCount;
 	}
 	
 	/**
@@ -55,8 +64,7 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * @return number of beans remaining
 	 */
 	public int getRemainingBeanCount() {
-		// TODO: Implement
-		return 0;
+		return remainingBeans.size();
 	}
 
 	/**
@@ -66,8 +74,10 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * @return the x-coordinate of the in-flight bean; if no bean in y-coordinate, return NO_BEAN_IN_YPOS
 	 */
 	public int getInFlightBeanXPos(int yPos) {
-		// TODO: Implement
-		return NO_BEAN_IN_YPOS;
+		if (beansOnBoard[yPos] == null) {
+			return NO_BEAN_IN_YPOS;
+		}
+		return beansOnBoard[yPos].getXPos();
 	}
 
 	/**
@@ -77,8 +87,7 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * @return number of beans in slot
 	 */
 	public int getSlotBeanCount(int i) {
-		// TODO: Implement
-		return 0;
+		return slots[i].size();
 	}
 
 	/**
@@ -87,8 +96,18 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * @return Average slot number of all the beans in slots.
 	 */
 	public double getAverageSlotBeanCount() {
-		// TODO: Implement
-		return 0;
+		int avg = 0;
+		int total = 0;
+		for (int i = 0; i < slotCount; i++) {
+			avg += i * slots[i].size();
+			total += slots[i].size();
+		}
+		
+		if (total == 0) {
+			return 0;
+		}
+		
+		return (double) avg / total;
 	}
 
 	/**
@@ -98,7 +117,22 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * will be remaining.
 	 */
 	public void upperHalf() {
-		// TODO: Implement
+		int sum = 0;
+		for (int i = 0; i < slotCount; i++) {
+			sum += slots[i].size();
+		}
+		if (sum % 2 != 0) {
+			sum = (sum - 1) / 2;
+		} else {
+			sum = sum / 2;
+		}
+
+		for (int i = 0; i < slotCount && sum > 0; i++) {
+			for (int j = 0; j < slots[i].size() && sum > 0;) {
+				slots[i].remove(j);
+				sum--;
+			}
+		}
 	}
 
 	/**
@@ -108,7 +142,22 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * will be remaining.
 	 */
 	public void lowerHalf() {
-		// TODO: Implement
+		int sum = 0;
+		for (int i = 0; i < slotCount; i++) {
+			sum += slots[i].size();
+		}
+		if (sum % 2 != 0) {
+			sum = (sum - 1) / 2;
+		} else {
+			sum = sum / 2;
+		}
+
+		for (int i = slotCount - 1; i >= 0 && sum > 0; i--) {
+			for (int j = 0; j < slots[i].size() && sum > 0;) {
+				slots[i].remove(j);
+				sum--;
+			}
+		}
 	}
 
 	/**
@@ -118,7 +167,15 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * @param beans array of beans to add to the machine
 	 */
 	public void reset(Bean[] beans) {
-		// TODO: Implement
+		remainingBeans.clear();
+		for (int i = 0; i < slotCount; i++) {
+			beansOnBoard[i] = null;
+			slots[i].clear();
+		}
+		for (int i = 0; i < beans.length; i++) {
+			remainingBeans.add(beans[i]);
+		}
+		insertAtTop();
 	}
 
 	/**
@@ -127,7 +184,16 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 * beginning, the machine starts with one bean at the top.
 	 */
 	public void repeat() {
-		// TODO: Implement
+		for (int i = 0; i < slotCount; i++) {
+			remainingBeans.addAll(slots[i]);
+			slots[i].clear();
+			
+			if (beansOnBoard[i] != null) {
+				remainingBeans.add(beansOnBoard[i]);
+				beansOnBoard[i] = null;
+			}
+		}
+		insertAtTop();
 	}
 
 	/**
@@ -139,8 +205,36 @@ public class BeanCounterLogicImpl implements BeanCounterLogic {
 	 *         means the machine is finished.
 	 */
 	public boolean advanceStep() {
-		// TODO: Implement
-		return false;
+		boolean change = false;
+		for (int i = slotCount - 1; i >= 0; i--) {
+			Bean curr = beansOnBoard[i];
+			
+			if (curr != null) {
+				if (i == slotCount - 1) {
+					slots[curr.getXPos()].add(curr);
+				} else {
+					curr.choose();
+					beansOnBoard[i + 1] = curr;
+				}
+				change = true;
+			} else if (i < slotCount - 1) {
+				beansOnBoard[i + 1] = null;
+			}
+			
+		}
+		insertAtTop();
+		return change;
+	}
+
+	private void insertAtTop() {
+		if (beansOnBoard.length == 0) {
+			return;
+		} else if (remainingBeans.size() > 0) {
+			beansOnBoard[0] = remainingBeans.remove(0);
+			beansOnBoard[0].reset();
+		} else {
+			beansOnBoard[0] = null;
+		}
 	}
 	
 	/**
